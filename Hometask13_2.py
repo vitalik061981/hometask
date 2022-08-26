@@ -33,8 +33,12 @@ print(rand_nums(n, minn, maxx))
 n = int(input())
 x = int(input())
 
-def bank(n,x):
+def bank(x):
     depo= 1.1**x
     return depo
 
-print(n*bank(n,x))
+#print(n*bank(x))
+
+a = float('{:.3f}'.format(n*bank(x)))
+
+print(a)
