@@ -35,10 +35,8 @@ x = int(input())
 
 def bank(x):
     depo= 1.1**x
-    return depo
+    return n*depo
 
-#print(n*bank(x))
-
-a = float('{:.3f}'.format(n*bank(x)))
+a = float('{:.2f}'.format(bank(x)))
 
 print(a)
