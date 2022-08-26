@@ -19,3 +19,22 @@ def rand_nums(n, minn, maxx):
     return ls
 
 print(rand_nums(n, minn, maxx))
+
+# Пользователь делает вклад N
+# рублей на X лет под 10 %
+# годовых, т.е. каждый год размер
+# его вклада увеличивается на
+# 10%. Напишите функцию,
+# которая возвращает
+# накопленную сумму.
+# In: bank(200, 4)
+# Out: 292.82
+
+n = int(input())
+x = int(input())
+
+def bank(n,x):
+    depo= 1.1**x
+    return depo
+
+print(n*bank(n,x))
