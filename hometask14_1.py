@@ -57,7 +57,7 @@ class Dog:
 
     def change_name(self, new_name):
         self.name = new_name
-        return new_name
+#        return new_name
 
 
 shepherd_dog = Dog(1,8,'Vasya',4)
