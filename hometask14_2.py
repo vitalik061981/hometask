@@ -74,6 +74,28 @@ c = HouseWithBeatifulSalon.salon_opening_hours(23)
 
 print(b)
 print(c)
-print()
 
+# hometask14_5
+# Добавьте в класс Porsche
+# метод, который считает
+# пробег, а также выводит
+# пробег и сколько за сегодня
+# проехал порш.
+# Создайте 1 порш и 2 раза
+# вызовите метод
 
+class Porsche:
+    def __init__(self, color, engine, power):
+        self.color = color
+        self.engine = engine
+        self.power = power
+    def drive(km_previous_days,km_today):
+        mileage= km_previous_days +km_today
+        print(f'Машина {"Porsche"} проехала сегодня {km_today}километров и пробег составляет {mileage}')
+if __name__ == '__main__':
+    a = Porsche('blue', 8, 400)
+    b = Porsche.drive(30,50)
+    с = Porsche.drive(50,100)
+
+print(b)
+print(с)
