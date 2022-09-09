@@ -31,7 +31,7 @@ class Pet:
         print(f'бегает со скоростью {run} км/ч')
 
     def birthday(self, birthday):
-        birth = self.age + 1
+        self.age += 1
         print(f'Рождение {birth}')
 
     def sleep(self, sleep):
