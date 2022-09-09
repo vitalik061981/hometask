@@ -32,7 +32,6 @@ class Pet:
 
     def birthday(self, birthday):
         self.age += 1
-        print(f'Рождение {birth}')
 
     def sleep(self, sleep):
         self.sleep = sleep
