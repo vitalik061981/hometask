@@ -9,6 +9,7 @@
 # Свыше 50 см - +80%
 
 class BeautySaloon:
+    
     min_price = 10
 
     # def __init__(self,min_price):
