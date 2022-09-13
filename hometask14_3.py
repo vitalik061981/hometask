@@ -59,15 +59,15 @@ class Pet:
         self.__master = master
 
     def set_name(self,name):
-        if name <= 0:
+        if len(name) <= 0:
             raise ValueError('Нет имени')
         self.__name=name
 
     def set_master(self,master):
-        if master <= 0:
+        if len(master) <= 0:
             raise ValueError('Нет хозяина')
         self.__master=master
 
-dogg = Pet(10,-20,10)
-print(dogg.set_name(-20))
-print(dogg.set_master(-20))
+dogg = Pet('vvv',-20,'nnn')
+print(dogg.set_name('dfghj'))
+print(dogg.set_master('dfghj'))
