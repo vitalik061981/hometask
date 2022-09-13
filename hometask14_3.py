@@ -39,3 +39,27 @@ class Pet:
 
 dogg = Pet(10,-20,10)
 print(dogg.set_age(20))
+
+# Hometask_14_9
+# Добавьте в класс Pet валидацию,
+# чтобы у питомца было имя и хозяин
+
+class Pet:
+    def __init__(self,name, age, master):
+        self.name = name
+        self.__age = age
+        self.master = master
+
+    def set_name(self,name):
+        if name <= 0:
+            raise ValueError('Нет имени')
+        self.__name=name
+
+    def set_master(self,master):
+        if master <= 0:
+            raise ValueError('Нет хозяина')
+        self.__master=master
+
+dogg = Pet(10,-20,10)
+#print(dogg.set_name(-20))
+print(dogg.set_master(-20))
