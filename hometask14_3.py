@@ -46,9 +46,9 @@ print(dogg.set_age(20))
 
 class Pet:
     def __init__(self,name, age, master):
-        self.name = name
-        self.__age = age
-        self.master = master
+        self.__name = name
+        self.age = age
+        self.__master = master
 
     def set_name(self,name):
         if name <= 0:
@@ -61,5 +61,5 @@ class Pet:
         self.__master=master
 
 dogg = Pet(10,-20,10)
-#print(dogg.set_name(-20))
+print(dogg.set_name(-20))
 print(dogg.set_master(-20))
