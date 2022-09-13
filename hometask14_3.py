@@ -19,3 +19,4 @@ nname = input('')
 b = nname.capitalize()
 
 print(name1(b))
+print(' '.join(name1(b)))
