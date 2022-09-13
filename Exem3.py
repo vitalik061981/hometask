@@ -18,10 +18,9 @@ def name1(nname):
     return c
 
 nname = input('')
-b = nname.capitalize()
 
-print(name1(b))
-print(' '.join(name1(b)))
+print(name1(nname))
+print(' '.join(name1(nname)))
 
 # exam_3_2
 # Напишите функцию, которая
